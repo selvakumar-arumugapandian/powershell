@@ -3,8 +3,6 @@ $nsgName = "nsg"
 $ruleName = ""
 $ruleDesc = "Allow RDP from my Home PC"
 $rulePort = 3389
-
-
 $myIp = (Invoke-WebRequest -uri "http://ifconfig.me/ip").Content
 
 function AddOrUpdateRDPRecord {
